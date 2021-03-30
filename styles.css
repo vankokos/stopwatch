@@ -1,0 +1,44 @@
+body {
+    background-color: orange;
+}
+
+.stopwatch {
+    position:absolute;
+    left:50%;
+    top:50%;
+    font-family: "roboto mono";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -214px;
+    margin-top: -46px;
+}
+
+.stopwatch button {
+    width:100px;
+    height:40px;
+    border:none;
+    border-radius: 3px;
+    outline:none;
+    cursor:pointer;
+    transition:0.4s;
+    font-family: "roboto mono";
+}
+
+.stopwatch button:hover {
+    background-color: black;
+    color:white;
+}
+
+.timer {
+    display: flex;
+}
+
+.timer p::after {
+    content: ":";
+}
+
+.timer p:last-child::after {
+    content: ""
+}
